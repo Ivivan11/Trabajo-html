@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glosario - Iván Barani Suárez</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <p class="modulo">Aplicaciones Web · 2º SMR · UT1</p>
+    <h1>Glosario</h1>
+    <p>Hecho por: <strong>Iván Barani Suárez</strong></p>
+  </header>
+
+  <main>
+
+    <section id="mi-web">
+      <h2>La web que he elegido</h2>
+      <p>He elegido <a href="https://www.fortnite.com/news" target="_blank">Fortnite</a> porque es un juego que conozco de sobra y su página oficial de noticias viene muy bien para ver una ruta clara en la barra de direcciones, comprobar su certificado seguro y ver cómo carga datos dinámicos en segundo plano.</p>
+    </section>
+
+    <section id="glosario">
+      <h2>Glosario</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Término</th>
+            <th>Definición con mis palabras</th>
+            <th>Ejemplo en mi web</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">Cliente</th>
+          <td>Es el dispositivo y el navegador que usamos nosotros para conectarnos a internet, pedir una página web y verla en la pantalla.</td>
+          <td>Mi propio ordenador y el navegador desde el que entro para ver las noticias de Fortnite.</td>
+        </tr>
+        <tr>
+          <th scope="row">Servidor</th>
+          <td>Es un ordenador potente que está encendido todo el día conectado a la red para guardar información y dársela a otros equipos cuando se la piden.</td>
+          <td>Las máquinas en la nube que usa Epic Games para tener alojada la web de Fortnite y sus archivos.</td>
+        </tr>
+        <tr>
+          <th scope="row">Servidor web</th>
+          <td>Es el programa instalado dentro del servidor que se encarga de atender las visitas de los navegadores y enviarles los archivos de la página.</td>
+          <td>El software que recibe mi visita al entrar a <code>www.fortnite.com</code> y me devuelve la portada y las fotos de las noticias.</td>
+        </tr>
+        <tr>
+          <th scope="row">Apache</th>
+          <td>Es uno de los programas de servidor web gratuitos más conocidos y usados de internet para alojar páginas web.</td>
+          <td>En la web de Fortnite no se ve si usan Apache u otro parecido porque lo tapan por seguridad detrás de Amazon CloudFront, pero haría esa misma función.</td>
+        </tr>
+        <tr>
+          <th scope="row">URL</th>
+          <td>Es la dirección completa que escribimos arriba en el navegador para ir directamente a una página o archivo concreto de internet.</td>
+          <td><code>https://www.fortnite.com/news</code>, que es la dirección entera para ir al apartado de noticias del juego.</td>
+        </tr>
+        <tr>
+          <th scope="row">Protocolo</th>
+          <td>Son las reglas que usan el navegador y el servidor para poder entenderse cuando se envían información por la red.</td>
+          <td>El <code>https://</code> que sale justo al principio de la barra de direcciones en la web de Fortnite.</td>
+        </tr>
+        <tr>
+          <th scope="row">Dominio</th>
+          <td>Es el nombre fácil de recordar que tiene una página web para no tener que aprendernos de memoria los números de su dirección IP.</td>
+          <td><code>www.fortnite.com</code>, que identifica la web oficial del juego.</td>
+        </tr>
+        <tr>
+          <th scope="row">Ruta</th>
+          <td>Es la parte de la dirección que va después del dominio (separada con barras) y que indica en qué apartado o carpeta de la web estamos.</td>
+          <td><code>/news</code>, que nos lleva directamente a la sección de noticias dentro de la página de Fortnite.</td>
+        </tr>
+        <tr>
+          <th scope="row">Dirección IP</th>
+          <td>Es el número único que identifica a cada aparato o servidor conectado a internet, igual que si fuera un número de teléfono.</td>
+          <td>Las direcciones numéricas que devuelve la terminal cuando ejecutamos el comando <code>nslookup www.fortnite.com</code>.</td>
+        </tr>
+        <tr>
+          <th scope="row">DNS</th>
+          <td>Es como la agenda de teléfonos de internet: traduce el nombre del dominio que escribimos nosotros a la dirección IP real del servidor.</td>
+          <td>El sistema que nos traduce el nombre <code>www.fortnite.com</code> a sus direcciones IP reales para que el navegador sepa a dónde conectarse.</td>
+        </tr>
+        <tr>
+          <th scope="row">HTTP</th>
+          <td>Es el protocolo básico de toda la vida para pedir y enviar páginas web, pero manda los datos en texto plano sin ninguna protección.</td>
+          <td>Si intentamos entrar escribiendo <code>http://www.fortnite.com</code>, el servidor nos redirige enseguida a la versión con HTTPS para no navegar sin cifrado.</td>
+        </tr>
+        <tr>
+          <th scope="row">HTTPS</th>
+          <td>Es la versión segura de HTTP, que cifra la conexión con un certificado para que nadie pueda leer ni robar los datos que viajan entre el navegador y la web.</td>
+          <td>Se ve en el <code>https://</code> de la dirección y al abrir los detalles de seguridad de la barra superior, donde pone que el certificado de la web es válido.</td>
+        </tr>
+        <tr>
+          <th scope="row">Puerto</th>
+          <td>Es como el número de puerta por la que entra y sale un servicio concreto dentro del servidor para no mezclarse con otros programas.</td>
+          <td>Como la web de Fortnite va por HTTPS, nuestro navegador se conecta automáticamente al puerto 443 del servidor aunque no se vea escrito en la URL.</td>
+        </tr>
+        <tr>
+          <th scope="row">Petición</th>
+          <td>Es el mensaje que envía el navegador al servidor cada vez que necesita que le mande el documento de la página, una imagen o un archivo de estilo.</td>
+          <td>En la pestaña Red (F12) se ven todas las peticiones (de tipo GET) que hace el navegador al cargar <code>/news</code> y las fotos de cada noticia.</td>
+        </tr>
+        <tr>
+          <th scope="row">Respuesta</th>
+          <td>Es la contestación que nos devuelve el servidor después de una petición, entregando el archivo pedido junto con el resultado de si todo ha ido bien.</td>
+          <td>El código HTML, las imágenes y los datos que nos manda de vuelta el servidor de Fortnite y que podemos inspeccionar en la pestaña Red.</td>
+        </tr>
+        <tr>
+          <th scope="row">Código de estado</th>
+          <td>Es un número de tres cifras con el que el servidor resume qué ha pasado con la petición (por ejemplo, 200 si todo fue bien o 404 si no existe).</td>
+          <td>El código <code>200</code> que aparece en la columna de estado de la pestaña Red (F12) cuando cargan bien la página de noticias y sus archivos.</td>
+        </tr>
+        <tr>
+          <th scope="row">Web estática</th>
+          <td>Es una página web fija que siempre muestra exactamente la misma información a todo el mundo y solo cambia si alguien edita el código a mano.</td>
+          <td>La web de Fortnite en conjunto no es estática, aunque páginas sueltas de texto legal como la política de privacidad casi funcionan como una fija.</td>
+        </tr>
+        <tr>
+          <th scope="row">Web dinámica</th>
+          <td>Es una web que genera o cambia su contenido automáticamente sacando los datos de una base de datos según lo que se publique o quién entre.</td>
+          <td>La sección <code>/news</code> de Fortnite es totalmente dinámica porque la lista de noticias y notas de parches se actualiza sola cada vez que sacan contenido nuevo.</td>
+        </tr>
+        <tr>
+          <th scope="row">PHP</th>
+          <td>Es un lenguaje de programación muy usado que trabaja dentro del servidor para fabricar páginas dinámicas y consultar bases de datos.</td>
+          <td>Fortnite usa tecnologías más modernas basadas en JavaScript en vez de PHP, pero haría ese mismo trabajo de preparar la web desde el lado del servidor.</td>
+        </tr>
+        <tr>
+          <th scope="row">Base de datos</th>
+          <td>Es el almacén donde una web guarda toda su información ordenada en tablas o colecciones para poder consultarla rápido cuando hace falta.</td>
+          <td>El sistema donde Epic Games tiene guardados todos los artículos de noticias, las imágenes de la tienda y las cuentas de los usuarios.</td>
+        </tr>
+        <tr>
+          <th scope="row">LAMP</th>
+          <td>Es un conjunto muy típico de cuatro herramientas (Linux, Apache, MySQL y PHP) que se instalan juntas para montar un servidor web completo.</td>
+          <td>Una web tan grande como Fortnite utiliza servidores en la nube más complejos que un LAMP tradicional, pero necesita igualmente esas cuatro piezas equivalentes.</td>
+        </tr>
+        <tr>
+          <th scope="row">JSON</th>
+          <td>Es un formato de texto muy ligero, escrito con llaves y parejas de clave-valor, que usan las webs actuales para intercambiar datos con el servidor.</td>
+          <td>Las respuestas que salen en la pestaña Red al filtrar por Fetch/XHR, donde la web de Fortnite recibe datos estructurados sin recargar toda la pantalla.</td>
+        </tr>
+        <tr>
+          <th scope="row">XML</th>
+          <td>Es un formato de texto más antiguo para guardar y transportar datos estructurados usando etiquetas parecidas a las del HTML.</td>
+          <td>Para cargar datos en vivo Fortnite prefiere usar JSON porque ocupa menos, aunque el mapa de la web para los buscadores (<code>sitemap.xml</code>) sí está hecho en XML.</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="evidencias">
+      <h2>Evidencias</h2>
+      <div class="evidencias">
+      <figure>
+        <img src="capturas/url.png" alt="Barra de direcciones de mi web con sus partes señaladas">
+        <figcaption>Barra de direcciones en la web de Fortnite con el protocolo (<code>https://</code>), el dominio (<code>www.fortnite.com</code>) y la ruta (<code>/news</code>) señalados.</figcaption>
+      </figure>
+      <figure>
+        <img src="capturas/nslookup.png" alt="Resultado de nslookup con el dominio de mi web">
+        <figcaption>Resultado de ejecutar <code>nslookup www.fortnite.com</code> en la terminal, donde el DNS nos devuelve las direcciones IP asociadas al dominio.</figcaption>
+      </figure>
+      <figure>
+        <img src="capturas/red.png" alt="Pestaña Red de F12 con una petición y su código de estado">
+        <figcaption>Pestaña Red de F12 mostrando las peticiones al cargar la web de Fortnite y el código de estado 200 que confirma que el servidor respondió bien.</figcaption>
+      </figure>
+      <figure>
+        <img src="capturas/https.png" alt="Candado e información del certificado de mi web">
+        <figcaption>Panel de seguridad del navegador donde se ve que la conexión va por HTTPS y que el certificado digital de la web es válido.</figcaption>
+      </figure>
+      <figure>
+        <img src="capturas/json.png" alt="Pestaña Red de F12, filtro Fetch/XHR, con una respuesta en JSON">
+        <figcaption>Pestaña Red con el filtro Fetch/XHR activado, mostrando una petición en segundo plano cuya respuesta devuelve datos en formato JSON.</figcaption>
+      </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Aplicaciones Web · 2º SMR</p>
+  </footer>
+
+</body>
+</html>
